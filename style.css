@@ -764,11 +764,18 @@ pre {
 
 .contact-form select {
   appearance: none;
+  background-color: var(--surface);
   background-image: linear-gradient(45deg, transparent 50%, #e9d6a0 50%), linear-gradient(135deg, #e9d6a0 50%, transparent 50%);
   background-position: calc(100% - 18px) calc(50% - 2px), calc(100% - 12px) calc(50% - 2px);
   background-size: 6px 6px, 6px 6px;
   background-repeat: no-repeat;
+  border-color: rgba(227, 224, 212, 0.5);
   padding-right: 40px;
+}
+
+.contact-form select option {
+  background: var(--surface);
+  color: var(--text);
 }
 
 .contact-actions {

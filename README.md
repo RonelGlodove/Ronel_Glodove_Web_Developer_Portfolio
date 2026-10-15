@@ -3,7 +3,7 @@
 A responsive student portfolio built with plain HTML, CSS, and JavaScript, following the provided *Website Portfolio Student Guide*.
 
 ## Files
-- `index.html` — homepage and portfolio sections
+- `index.html` — homepage, about, skills, projects, and contact sections
 - `style.css` — responsive styling
 - `script.js` — mobile navigation and footer year
 - `assets/` — add your own project screenshots here if desired
