@@ -5,12 +5,12 @@ A responsive student portfolio built with plain HTML, CSS, and JavaScript, follo
 ## Files
 - `index.html` — homepage, about, skills, projects, and contact sections
 - `style.css` — responsive styling
-- `script.js` — mobile navigation and footer year
+- `script.js` — mobile navigation, footer year, and the email-app contact form
 - `assets/` — add your own project screenshots here if desired
 
 ## Personalize before publishing
 1. Replace every `YOUR_USERNAME` with your GitHub username.
-2. Replace `YOUR_EMAIL@example.com` and the contact placeholder with an email address you are comfortable publishing.
+2. Update the contact email in `index.html` and `script.js` if you want messages sent to a different address. The contact form opens the visitor's email app with a prefilled draft; the visitor must press Send.
 3. Check that the project descriptions accurately represent your contribution.
 4. Add screenshots you own or have permission to publish. Update the project cards to use them if you want.
 5. Remove any skills or project details that do not reflect your actual experience.

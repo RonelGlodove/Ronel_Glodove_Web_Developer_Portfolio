@@ -170,32 +170,39 @@
 
         <a class="email-highlight" href="mailto:Yukiborres9@gmail.com">Yukiborres9@gmail.com</a>
 
-        <form class="contact-form" action="#" method="post">
+        <form class="contact-form" action="mailto:Yukiborres9@gmail.com" method="post" enctype="text/plain">
           <label class="field">
             <span>Your name</span>
-            <input type="text" name="name" placeholder="Your name" />
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+
+          <label class="field">
+            <span>Your email</span>
+            <input type="email" name="email" placeholder="you@example.com" required />
           </label>
 
           <label class="field">
             <span>Reason for contacting me</span>
             <select name="reason">
-              <option>Job or Internship</option>
-              <option>Project Collaboration</option>
-              <option>Freelance Work</option>
-              <option>General Inquiry</option>
+              <option value="Job or Internship">Job or Internship</option>
+              <option value="Project Collaboration">Project Collaboration</option>
+              <option value="Freelance Work">Freelance Work</option>
+              <option value="General Inquiry">General Inquiry</option>
             </select>
           </label>
 
           <label class="field">
             <span>Your message</span>
-            <textarea name="message" rows="4" placeholder="Write your message here..."></textarea>
+            <textarea name="message" rows="4" placeholder="Write your message here..." required></textarea>
           </label>
+
+          <div class="contact-actions">
+            <button type="submit" class="send-btn">Send message</button>
+            <button type="button" class="copy-btn">Copy email</button>
+          </div>
         </form>
 
-        <div class="contact-actions">
-          <button type="submit" class="send-btn">Send message</button>
-          <button type="button" class="copy-btn">Copy email</button>
-        </div>
+        <p class="form-note">Submitting opens your email app with a draft. Review it and press Send to deliver your message.</p>
 
         <div class="social-row">
           <a href="https://www.instagram.com/glodove_ronel/" target="_blank" rel="noopener noreferrer">Instagram</a>

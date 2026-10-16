@@ -98,9 +98,15 @@ const sendButton = document.querySelector(".send-btn");
 if (contactForm && sendButton) {
   contactForm.addEventListener("submit", (event) => {
     event.preventDefault();
-    sendButton.textContent = "Message sent";
-    setTimeout(() => {
-      sendButton.textContent = "Send message";
-    }, 1500);
+    const formData = new FormData(contactForm);
+    const name = formData.get("name");
+    const email = formData.get("email");
+    const reason = formData.get("reason");
+    const message = formData.get("message");
+    const subject = `Portfolio contact: ${name}`;
+    const body = `Name: ${name}\nEmail: ${email}\nReason: ${reason}\n\nMessage:\n${message}`;
+    const mailtoUrl = `mailto:Yukiborres9@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    window.location.href = mailtoUrl;
   });
 }
